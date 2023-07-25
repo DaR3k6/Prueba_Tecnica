@@ -16,76 +16,83 @@
       <div class="container-fluid">
         <div class="row">
           <div class="d-flex justify-content-center">
-            <form>
-              <h1 class="h3 mb-3 fw-normal text-center">REGISTRO</h1>
-              <img
-                class="rounded mx-auto d-block"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAm6XyCpXuLL8x95gf2tq4G8lIwaquFiAnuLe3VcdGw1ML0ziTu-dT40P-z5GrjXZ_elQ&usqp=CAU"
-                alt=""
-              />
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  placeholder="NOMBRE "
+            <div class="col-6 col-md-4 formulario">
+              <form>
+                <h1 class="h3 mb-3 fw-normal text-center">REGISTRO</h1>
+                <img
+                  class="rounded mx-auto d-block"
+                  src="./assets/img/logo.jpg"
+                  width="300"
+                  alt=""
                 />
-                <label for="floatingInput">NOMBRE</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="apellido"
-                  placeholder="APELLIDO "
-                />
-                <label for="floatingInput">APELLIDO</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="direccion"
-                  placeholder="DIRECCION"
-                />
-                <label for="floatingInput">DIRECCION</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="telefono"
-                  placeholder="TELEFONO"
-                />
-                <label for="floatingPassword">TELEFONO</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="gmail"
-                  placeholder="TELEFONO"
-                />
-                <label for="floatingPassword">GMAIL</label>
-              </div>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="NOMBRE "
+                  />
+                  <label for="floatingInput">NOMBRE</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido"
+                    placeholder="APELLIDO "
+                  />
+                  <label for="floatingInput">APELLIDO</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="direccion"
+                    placeholder="DIRECCION"
+                  />
+                  <label for="floatingInput">DIRECCION</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telefono"
+                    placeholder="TELEFONO"
+                  />
+                  <label for="floatingPassword">TELEFONO</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="gmail"
+                    placeholder="TELEFONO"
+                  />
+                  <label for="floatingPassword">GMAIL</label>
+                </div>
 
-              <div class="form-floating">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="CONTRASEÑA"
-                />
-                <label for="floatingPassword">CONTRASEÑA</label>
-              </div>
-              <br />
-              <button class="btn btn-primary w-100 py-2" type="submit">
-                REGISTADO
-              </button>
-              <p class="mt-5 mb-3 text-body-secondary text-center">
-                &copy; 2017–2023
-              </p>
-            </form>
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="CONTRASEÑA"
+                  />
+                  <label for="floatingPassword">CONTRASEÑA</label>
+                </div>
+                <br />
+                <button
+                  class="btn btn-primary w-100 py-2"
+                  type="submit"
+                  id="btnRegistro"
+                >
+                  REGISTADO
+                </button>
+                <p class="mt-5 mb-3 text-body-secondary text-center">
+                  &copy; 2017–2023
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -97,6 +104,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    ;
+    <script src="./assets/js/API/registro.js"></script>
   </body>
 </html>
