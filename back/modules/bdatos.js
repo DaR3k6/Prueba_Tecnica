@@ -7,12 +7,12 @@ const conexion = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "prueba",
+  database: "practica",
 });
 
 //Nos conectamos a la base de datos
 
-conexion.connect((error) => {
+conexion.connect(error => {
   if (error) {
     // throw "Existe un error en la cadena de conexion!";
     console.log(`Hay un error:${error}`);
