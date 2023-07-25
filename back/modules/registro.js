@@ -9,7 +9,7 @@ const { promisify } = require("util"); //La trae por defecto NODE JS me permite 
 
 ruta.use(express.json());
 ruta.use(cors());
-ruta.options("*", cors()); 
+ruta.options("*", cors());
 
 //Traemos los registros de la BD
 ruta.get("/api/registro", (req, res) => {
@@ -24,25 +24,23 @@ ruta.get("/api/registro", (req, res) => {
 
 //Enviamos el registro a la BD
 ruta.post("/Registro/enviar", async (req, res) => {
-    try {
-      let data = {
-        FECHA: req.body.FECHA,
-        PREGUNTA1: req.body.PREGUNTA1,
-        PREGUNTA2: req.body.PREGUNTA1,
-        PREGUNTA3: req.body.PREGUNTA1,
-        PREGUNTA4: req.body.PREGUNTA1,
-        CALIFICACION: req.body.CALIFICACION
-      };
-      conex.query("INSERT INTO registro SET ?", data, (error, respuesta) => {
-        //res.send("insercion exitosa !");
-        console.log(respuesta);
-        res.send(true).status(201);
-      });
-    } catch (error) {
-      console.log(error);
-      // res.send.status(404).error;
-    }
-  });
+  try {
+    let data = {
+      FECHA: req.body.FECHA,
+      PREGUNTA2: req.body.PREGUNTA1,
+      PREGUNTA3: req.body.PREGUNTA1,
+      PREGUNTA4: req.body.PREGUNTA1,
+      CALIFICACION: req.body.CALIFICACION,
+    };
+    conex.query("INSERT INTO registro SET ?", data, (error, respuesta) => {
+      //res.send("insercion exitosa !");
+      console.log(respuesta);
+      res.send(true).status(201);
+    });
+  } catch (error) {
+    console.log(error);
+    // res.send.status(404).error;
+  }
+});
 
-
-  module.exports = ruta;
+module.exports = ruta;
